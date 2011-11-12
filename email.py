@@ -76,7 +76,7 @@ w_id = feed.entry[0].id.text.rsplit('/',1)[1]
 feed = gd_client.GetListFeed(s_id, w_id)
 
 # save something
-write_data(s_id, w_id, "Unread External Important", msgs_ext_unread)
-write_data(s_id, w_id, "Unread Internal Important", msgs_op_unread)
-write_data(s_id, w_id, "Read External Important", msgs_ext_read)
-write_data(s_id, w_id, "Read Internal Important", msgs_op_read)
+write_data(s_id, w_id, "Unread External", msgs_ext_unread)
+write_data(s_id, w_id, "Unread Internal", msgs_op_unread)
+write_data(s_id, w_id, "Read External", msgs_ext_read)
+write_data(s_id, w_id, "Read Internal", msgs_op_read)
