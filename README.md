@@ -5,3 +5,4 @@ To do:
 * select by age -- more interesting/important than totals.
 * set up with a cron job
 * charts! d3.js or google viz api?
+* print the data in a format that's eaier for area charts (table not key-value pairs)
