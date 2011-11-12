@@ -11,6 +11,8 @@ import atom
 
 # for timestamp
 import datetime
+# we have to do a single timestamp for all rowns, or the charting gets all screwed up.
+timestamp = str(datetime.datetime.now())
 
 # name of the spreadsheet we're writing to
 doc_name = "Email data"
@@ -24,7 +26,7 @@ def get_message_count(search_string):
 # write stuff to the spreadsheet
 def write_data(s_id, w_id, type, num_emails):
   dict = {}
-  dict['timestamp'] = str(datetime.datetime.now())
+  dict['timestamp'] = timestamp
   dict['type'] = type
   dict['emails'] = num_emails
   entry = gd_client.InsertRow(dict, s_id, w_id)
