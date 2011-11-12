@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inbox status</title>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?1.29.1"></script>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.layout.js?1.29.1"></script>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.time.js?1.29.1"></script>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.csv.js?1.29.1"></script>
+    <style type="text/css">
+
+svg {
+  width: 960px;
+  height: 500px;
+  border: solid 1px #ccc;
+  font: 10px sans-serif;
+  shape-rendering: crispEdges;
+}
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+	
+  // looking at https://github.com/mbostock/d3/wiki/Requests#d3_text): and https://docs.google.com/a/openplans.org/spreadsheet/ccc?key=0AtSxsdtsklRddFF5WlgwSUh2S3kzRW5XekdmendIbFE&hl=en_US#gid=0 
+  var data; // a global
+
+  d3.json("path/to/file.json", function(json) {
+  data = json;
+  visualizeit();
+});
+
+    </script>
+  </body>
+</html>
