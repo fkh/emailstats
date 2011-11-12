@@ -39,6 +39,7 @@ mail.select("INBOX")
 mail.list()
 
 # get messages
+# this _really_ helped me find the priority inbox labels for imaplib: http://code.google.com/apis/gmail/imap/#x-gm-labels
 # read important external messages
 msgs_ext_read = get_message_count('(SEEN NOT FROM "openplans.org" X-GM-LABELS "Important")')
 
